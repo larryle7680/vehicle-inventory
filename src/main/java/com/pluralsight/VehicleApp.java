@@ -1,4 +1,5 @@
 package com.pluralsight;
+import java.util.Arrays;
 import java.util.Scanner;
 //com.pluralsight.Vehicle Class
 public class VehicleApp {
@@ -16,13 +17,15 @@ public class VehicleApp {
 
     public static void main(String[] args) {
 
-        //Now fill the array 6 spots with cars
-        new Vehicle(101121, "Ford Explorer", "Red", 45000, 13500);
-        new Vehicle(101122, "Toyota Camry", "Blue", 60000, 11000);
-        new Vehicle(101123, "Chevrolet Malibu", "Black", 50000, 9700);
-        new Vehicle(101124, "Honda Civic", "White", 70000, 7500);
-        new Vehicle(101125, "Subaru Outback", "Green", 55000, 14500);
-        new Vehicle(101126, "Jeep Wrangler", "Yellow", 30000, 16000);
+           //Now fill the array 6 spots with cars and store it in the array
+           vehicle[0] = new Vehicle(101121, "Ford Explorer", "Red", 45000, 13500);
+           vehicle[1] = new Vehicle(101122, "Toyota Camry", "Blue", 60000, 11000);
+           vehicle[2] = new Vehicle(101123, "Chevrolet Malibu", "Black", 50000, 9700);
+           vehicle[3] = new Vehicle(101124, "Honda Civic", "White", 70000, 7500);
+           vehicle[4] = new Vehicle(101125, "Subaru Outback", "Green", 55000, 14500);
+           vehicle[5] = new Vehicle(101126, "Jeep Wrangler", "Yellow", 30000, 16000);
+
+            menuLoop();
     }
 
     //Creating a method to help loop the questions
@@ -44,11 +47,27 @@ public class VehicleApp {
             //store the users answer
              int usersChoice = theScanner.nextInt();
 
-             switch()
+             switch(usersChoice){
+                 case 1:
+                     displayCarsID();
+                     break;
+                 case 2:
 
+
+
+             }
         }
 
     }
+
+    //Creating a method to display all the cars
+    public static void displayCarsID(){
+        for (Vehicle value : vehicle) {
+            System.out.println(value.getMakeModel());
+        }
+    }
+
+    //Creating a method
 
 
 

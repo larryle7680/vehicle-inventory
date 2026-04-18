@@ -1,10 +1,12 @@
+package com.pluralsight;
+
 public class Vehicle {
-    //Attributes for Vehicle
-    long vehicleId = 0;
-    String makeModel = "";
-    String color = "";
-    int odometerReading = 0;
-    float price = 0;
+    //Attributes for com.pluralsight.Vehicle
+   private long vehicleId = 0;
+   private String makeModel = "";
+   private String color = "";
+   private int odometerReading = 0;
+   private float price = 0;
 
 
     //Constructor
